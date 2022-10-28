@@ -1,0 +1,476 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#hidden-nav,
+#hidlabel {
+  display: none;
+}
+
+/*-------- Top nav --------*/
+.topnav {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.menu a {
+  color: white;
+  transition: color 0.6s ease;
+}
+
+.menu > li {
+  width: 15vw;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 400;
+  line-height: 30px;
+  border-right: 1px solid white;
+}
+
+.menu > li:hover a {
+  color: goldenrod;
+}
+
+.menu > li:last-child {
+  border-right: none;
+}
+
+.menu p {
+  color: goldenrod;
+  position: absolute;
+  left: 1vw;
+}
+
+/*------- Home --------*/
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.head {
+  background-image: url("https://raw.githubusercontent.com/Pj-Thinker/my-html-content/main/the_one_ring_lotr.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right center;
+  color: white;
+  height: 600px;
+  text-align: center;
+  display: flex;
+}
+
+#head-card {
+  height: 200px;
+  flex-basis: 50%;
+  align-self: center;
+}
+
+#head-card h2 {
+  color: goldenrod;
+}
+#buy-btn a {
+  color: black;
+}
+
+#buy-btn {
+  margin: 40px 30% 0;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 1.14em;
+  background-color: goldenrod;
+  border: 5px solid goldenrod;
+  border-radius: 10px;
+  transition: background-color 0.6s ease;
+}
+
+.head #buy-btn:hover {
+  background-color: snow;
+}
+
+.home-sub {
+  background-color: white;
+  background-image: url("https://raw.githubusercontent.com/Pj-Thinker/my-html-content/main/theRinghollow.png");
+  background-attachment: scroll;
+  background-position: -10% 60%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  height: 350px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#about-ring {
+  flex-basis: 50%;
+  align-self: center;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-right: 10%;
+}
+
+/*-------- Features --------*/
+.features {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  background-color: black;
+  padding: 20px;
+  z-index: 1;
+}
+
+.features h2 {
+  color: goldenrod;
+  font-size: 1.8em;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.feature-card {
+  flex-basis: 200px;
+  margin: 1vw;
+  padding: 40px 10px;
+  background-color: goldenrod;
+  border-radius: 5px 25px;
+  height: auto;
+  transition: border-radius 0.6s ease;
+}
+
+.feature-card:hover {
+  border-radius: 25px 5px;
+}
+
+.feature-card > strong {
+  line-height: 50px;
+}
+
+.icons {
+  margin-bottom: 10px;
+}
+
+.feature-card:first-child .icons,
+.feature-card:last-child .icons {
+  margin-bottom: 1px;
+}
+
+/*------- Reviews -------*/
+.reviews {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+.reviews h2 {
+  color: black;
+  font-size: 1.8em;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.review-box {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: black;
+  border: 2px solid darkgoldenrod;
+  border-radius: 5px 15px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  transition: box-shadow 0.6s ease, border-radius 0.5s ease;
+}
+
+.review-box:hover {
+  box-shadow: 0 0 5px 1px gray;
+  border-radius: 15px 5px;
+}
+
+.quotes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-img {
+  border: 5px solid goldenrod;
+  border-radius: 50%;
+  flex-basis: 0;
+}
+
+.quotes p strong {
+  display: block;
+  padding-bottom: 10px;
+}
+
+/*------- Video --------*/
+.video {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  z-index: 1;
+}
+
+/*-------- Pricing --------*/
+.price {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  height: auto;
+  z-index: 1;
+}
+
+.price h2 {
+  color: black;
+  font-size: 1.8em;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.price-box {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  background-color: goldenrod;
+  border: 1px solid darkgoldenrod;
+  border-radius: 5px 15px;
+  flex-basis: 200px;
+  max-width: 200px;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin: 0 1vw 30px;
+  box-shadow: 0 0 3px 1px gray;
+  transition: width 0.6s ease, border-radius 0.6s ease;
+}
+
+.price-box:hover {
+  border-radius: 15px 5px;
+}
+
+.price-tag {
+  margin-top: 50px;
+  font-size: 1.4em;
+}
+
+.price-tag sub {
+  font-size: 0.6em;
+}
+
+.price-box .button {
+  font-weight: bold;
+  border: 2px solid darkgoldenrod;
+  border-radius: 10px;
+  background-color: lavender;
+  padding: 15px 20px;
+  margin-top: 10px;
+  box-shadow: 0 0 3px gray;
+  transition: background-color 0.6s ease, border 0.6s ease, color 0.6s ease;
+}
+
+.price-box .button:hover {
+  color: white;
+  border: 2px solid orange;
+  background-color: black;
+}
+
+/*------- Footer -------*/
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  height: auto;
+  padding: 30px;
+  z-index: 1;
+}
+
+.form,
+.invite {
+  flex-basis: 1;
+}
+
+#email-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#email {
+  display: block;
+  width: 100%;
+  margin: 0 auto 10px;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#email:focus {
+  background-color: black;
+  color: white;
+}
+
+#submit {
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: #f3dfae;
+}
+
+#submit:hover {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+#email:invalid {
+  background-color: #d92a20;
+}
+
+.invite {
+  padding-top: 15px;
+}
+
+/* Responsive Web Design */
+@media screen and (max-width: 600px) {
+  #hidlabel {
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%, 0);
+    transition: transform 1s ease;
+    background-color: black;
+  }
+
+  .menu > li {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    border-right: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .topnav input:checked ~ ul {
+    display: flex;
+    transform: none;
+    width: 100%;
+  }
+
+  .menu p {
+    position: absolute;
+    left: 1vw;
+    top: -30px;
+  }
+
+  .head {
+    justify-content: center;
+  }
+
+  #head-card {
+    align-self: flex-end;
+    margin-bottom: 150px;
+  }
+
+  #head-card h2 {
+    font-size: 120%;
+  }
+
+  .feature-card {
+    height: 240px;
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
+
+  iframe {
+    width: 80vw;
+    height: 320px;
+  }
+
+  .price-box {
+    flex-basis: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .head {
+    height: 550px;
+  }
+  #head-card {
+    align-self: flex-end;
+    margin-bottom: 200px;
+  }
+
+  .feature-card {
+    height: 200px;
+    flex-basis: 150px;
+    font-size: 85%;
+  }
+
+  .price-box {
+    flex-basis: 160px;
+    font-size: 85%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home-sub {
+    background-position: 0 60%;
+    background-size: contain;
+  }
+}
