@@ -389,3 +389,14 @@ table {
 td {
   padding: 0;
 } /*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
+}
