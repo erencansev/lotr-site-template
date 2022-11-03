@@ -1,0 +1,40 @@
+.navigation__nav {
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1200;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+user agent stylesheet
+nav {
+    display: block;
+}
+body {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999;
+}
+@media (min-width: 112.5em)
+html {
+    font-size: 75%;
+}
+html {
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;

@@ -1,12 +1,2 @@
 @import "./normalize.scss";
 @import "./formalize.scss";
-* {
-  margin: 0;
-  padding: 0;
-  .container {
-    height: 100vh;
-    width: 100%;
-    background: #defb36;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  }
-}
