@@ -1,5 +1,8 @@
-@import "normalize";
-///
-@import "formalize";
-///
-@import "variable";
+//
+@import "_normalize";
+@import "formalize.scss";
+@import "_global";
+//
+@import "_variable";
+//
+@import "_header";
