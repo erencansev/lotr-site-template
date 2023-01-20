@@ -1,10 +1,10 @@
-//normalize
-@import "./variable";
-//formalize
-@import "./formalize";
-//global
-@import "./normalize";
 //variable
-@import "./global";
-//header
-@import "./navbar";
+@import "./config/variable";
+//formalize
+@import "./helper/formalize";
+//normalize
+@import "./helper/normalize";
+//global
+@import "./helper/global";
+//navbar
+@import "./global/navbar";
