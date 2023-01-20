@@ -7,5 +7,43 @@
     font-weight: 400;
     line-height: 1.7;
     color: #999;
+
+    .navigation-nav {
+      height: 5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: black;
+      z-index: 1200;
+      .navigation-list {
+        width: 80%;
+        max-width: 1100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .navigation-item {
+          padding: 17px;
+          font-size: 22px;
+
+          a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+          }
+          // ilerde ::before ::after eklenecek.
+          a:hover {
+            color: goldenrod;
+            transition: 0.3s ease;
+          }
+        }
+      }
+    }
   }
 }
