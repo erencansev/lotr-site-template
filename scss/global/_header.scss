@@ -21,19 +21,39 @@
     h1 {
       font-size: 2em;
       margin: 0.67em 0;
+      margin-bottom: 35px;
       .header-primary-main {
+        font-family: Lora, serif;
         color: goldenrod;
         display: block;
-        font-size: 3rem;
-        font-weight: 700;
+        font-size: 2.5rem;
+        font-weight: 700px;
         letter-spacing: 1px;
       }
       .header-primary-sub {
         color: #f7f7f7;
         display: block;
-        font-size: 2rem;
-        font-weight: 300;
+        font-size: 24px;
+        font-weight: 400;
         letter-spacing: 1px;
+      }
+    }
+    .buy-now-button {
+      text-decoration: none;
+      color: black;
+      background-color: goldenrod;
+      border-radius: 1rem;
+      width: 189px;
+      height: 68px;
+      margin-bottom: 55px;
+      a {
+        padding: 18px 48px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 19px;
+        text-transform: uppercase;
+        font-weight: bold;
       }
     }
   }
