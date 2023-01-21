@@ -430,4 +430,43 @@ template {
 * body .navigation-nav .navigation-list .navigation-item a:hover {
   color: goldenrod;
   transition: 0.3s ease;
+}
+
+.header {
+  height: 95vh;
+  background-image: url("/images/the_one_ring_lotr.jpg"), linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  display: block;
+}
+.header .header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+.header .header-text-box h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.header .header-text-box h1 .header-primary-main {
+  color: goldenrod;
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header .header-text-box h1 .header-primary-sub {
+  color: #f7f7f7;
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=main.css.map */
