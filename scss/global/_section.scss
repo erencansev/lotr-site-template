@@ -1,0 +1,67 @@
+.about-section {
+  background-color: #f7f7f7;
+  padding: 20rem 0 23rem 0;
+  margin-top: -20vh;
+  .center-fear-text {
+    margin-bottom: 8rem;
+    text-align: center;
+
+    .header-second {
+      display: inline-block;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      background-image: linear-gradient(to right, #e8c15f, #ae8319);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 0.2s;
+      h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+    }
+  }
+  .row-div {
+    width: 1234px;
+    height: 261px;
+    margin: 0 auto;
+
+    .left {
+      margin-right: 6rem;
+      width: calc((100% - 6rem) / 2);
+      float: left;
+    }
+  }
+  p.paragraph {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 19px;
+    float: left;
+    margin-bottom: 3rem;
+  }
+  .btn-learn-more {
+    font-size: 19px;
+    color: goldenrod;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid goldenrod;
+    padding: 3px;
+  }
+  .photo-right {
+    float: right;
+  }
+  img {
+    width: 518px;
+    height: 291px;
+  }
+}
