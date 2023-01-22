@@ -1,3 +1,4 @@
+// about-section-code
 .about-section {
   background-color: #f7f7f7;
   padding: 20rem 0 23rem 0;
@@ -63,5 +64,38 @@
   img {
     width: 518px;
     height: 291px;
+  }
+}
+
+// features-section-code
+.features-section {
+  padding: 12rem 0;
+  background-size: cover;
+  transform: skewY(7deg);
+  margin-top: -10rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(232, 193, 95, 0.8),
+      rgba(174, 131, 25, 0.8)
+    ),
+    url(/images/mountDoom.jpg);
+
+  .row-div {
+    transform: skewY(-7deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 55px;
+    .col-1-of-5 {
+      width: 215px;
+      height: 256px;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 3px;
+      transition: transform 0.3s;
+      box-shadow: 0 1.5rem 4rem rgb(18 18 18 / 15%);
+    }
   }
 }
