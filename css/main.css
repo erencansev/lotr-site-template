@@ -563,17 +563,18 @@ template {
   transform: skewY(7deg);
   margin-top: -10rem;
   background-image: linear-gradient(to right, rgba(232, 193, 95, 0.8), rgba(174, 131, 25, 0.8)), url(/images/mountDoom.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .features-section .row-div {
   transform: skewY(-7deg);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding-left: 55px;
+  justify-content: space-around;
+  max-width: 1300px;
 }
 .features-section .row-div .col-1-of-5 {
-  width: 215px;
-  height: 256px;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 1rem;
@@ -581,4 +582,22 @@ template {
   border-radius: 3px;
   transition: transform 0.3s;
   box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.15);
+  margin-right: 50px;
+  margin-right: 30px;
+}
+.features-section .row-div .col-1-of-5 .feature-box__icon {
+  display: block;
+  font-size: 3rem;
+  background-image: linear-gradient(to right, #e8c15f, #ae8319);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
+}
+.features-section .row-div .col-1-of-5 h3 {
+  font-size: 19px;
+  margin-bottom: 1rem;
+}
+.features-section .row-div .col-1-of-5 p {
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
