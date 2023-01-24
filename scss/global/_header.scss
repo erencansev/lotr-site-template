@@ -7,7 +7,6 @@
   background-size: contain;
   background-position: right top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   display: block;
   .header-text-box {
@@ -22,6 +21,7 @@
       font-size: 2em;
       margin: 0.67em 0;
       margin-bottom: 35px;
+
       .header-primary-main {
         font-family: Lora, serif;
         color: goldenrod;
@@ -29,6 +29,19 @@
         font-size: 2.5rem;
         font-weight: 700px;
         letter-spacing: 1px;
+        @media screen and (max-width: 992px) {
+          font-size: 2rem;
+          color: red;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 1.5rem;
+          color: red;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 1rem;
+          color: red;
+        }
       }
       .header-primary-sub {
         color: #f7f7f7;

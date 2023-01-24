@@ -440,7 +440,6 @@ template {
   background-size: contain;
   background-position: right top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   display: block;
 }
@@ -464,6 +463,24 @@ template {
   font-size: 2.5rem;
   font-weight: 700px;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 992px) {
+  .header .header-text-box h1 .header-primary-main {
+    font-size: 2rem;
+    color: red;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .header-text-box h1 .header-primary-main {
+    font-size: 1.5rem;
+    color: red;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .header-text-box h1 .header-primary-main {
+    font-size: 1rem;
+    color: red;
+  }
 }
 .header .header-text-box h1 .header-primary-sub {
   color: #f7f7f7;
@@ -600,4 +617,69 @@ template {
 }
 .features-section .row-div .col-1-of-5 p {
   font-size: 18px;
+}
+
+.stories-section {
+  position: relative;
+  padding: 20rem 0 10rem 0;
+  margin-top: -10rem;
+}
+.stories-section .header-second {
+  text-align: center;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, #e8c15f, #ae8319);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 15px;
+}
+
+.row-card {
+  width: 1025px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin: auto;
+}
+.row-card .story {
+  width: 985px;
+  height: 290px;
+  background-color: #ae8319;
+  margin: 0 auto;
+  transform: skewX(-12deg);
+  box-shadow: 0 3rem 6rem rgba(18, 18, 18, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.row-card .story .story-image-div {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: rgb(224, 224, 224);
+  transform: skewX(12deg);
+  margin-left: 25px;
+}
+.row-card .story .story-image-div img {
+  padding: 0;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 50%;
+}
+.row-card .story .story-header h3 {
+  font-size: 1.5rem;
+  margin-right: 150px;
+}
+.row-card .story .story-header h3 p {
+  font-size: 1rem;
+  padding-right: 50px;
 }/*# sourceMappingURL=main.css.map */

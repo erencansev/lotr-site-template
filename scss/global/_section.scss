@@ -21,6 +21,7 @@
       h2 {
         display: block;
         font-size: 1.5em;
+        // düzenle
         margin-block-start: 0.83em;
         margin-block-end: 0.83em;
         margin-inline-start: 0px;
@@ -37,6 +38,7 @@
     .left {
       margin-right: 6rem;
       width: calc((100% - 6rem) / 2);
+      // düzenle floatlar
       float: left;
     }
   }
@@ -116,6 +118,73 @@
       }
       p {
         font-size: 18px;
+      }
+    }
+  }
+}
+
+// ınsıght-section code
+.stories-section {
+  position: relative;
+  padding: 20rem 0 10rem 0;
+  margin-top: -10rem;
+  .header-second {
+    text-align: center;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, #e8c15f, #ae8319);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 15px;
+  }
+}
+.row-card {
+  width: 1025px;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin: auto;
+  .story {
+    width: 985px;
+    height: 290px;
+    background-color: #ae8319;
+    margin: 0 auto;
+    transform: skewX(-12deg);
+    box-shadow: 0 3rem 6rem rgb(18 18 18 / 10%);
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .story-image-div {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background-color: rgb(224, 224, 224);
+      transform: skewX(+12deg);
+      margin-left: 25px;
+
+      img {
+        padding: 0;
+        max-width: 100%;
+        min-width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .story-header h3 {
+      font-size: 1.5rem;
+      margin-right: 150px;
+      p {
+        font-size: 1rem;
+        padding-right: 50px;
       }
     }
   }
