@@ -682,4 +682,25 @@ template {
 .row-card .story .story-header h3 p {
   font-size: 1rem;
   padding-right: 50px;
+}
+
+.offers-section {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem, 0;
+}
+.offers-section .offers-text {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, #e8c15f, #ae8319);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  margin-bottom: 6px;
 }/*# sourceMappingURL=main.css.map */
