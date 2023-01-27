@@ -191,23 +191,10 @@
 }
 
 //offers-section code
-.offers-section {
-  background-color: #fff;
+.cards {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 15rem, 0;
-  .offers-text {
-    display: inline-block;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    background-image: linear-gradient(to right, #e8c15f, #ae8319);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: all 0.2s;
-    margin-bottom: 6px;
-  }
+  align-items: center;
+  width: auto;
+  height: auto;
 }
