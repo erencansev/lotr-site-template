@@ -684,10 +684,79 @@ template {
   padding-right: 50px;
 }
 
-.cards {
+.offers-section {
+  background-color: #f7f7f7;
+}
+
+.offers-text {
+  padding-top: 10rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, #e8c15f, #ae8319);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  padding: 120px 0px 180px 0px;
+}
+.card-container .card {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 2px 2px 10px gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-container .card .card-image-1 {
+  width: 100%;
+  height: 60%;
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/images/Samwise.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-blend-mode: screen;
+}
+.card-container .card .card-content {
+  padding: 20px;
+}
+.card-container .card .card-content .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.card-container .card .card-content .card-paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.card-container .card .card-image-2 {
+  width: 100%;
+  height: 60%;
+  background-image: linear-gradient(to right bottom, #e8c15f, #ae8319), url(/images/frodo.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-blend-mode: screen;
+}
+.card-container .card .card-image-3 {
+  width: 100%;
+  height: 60%;
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/images/baggins.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-blend-mode: screen;
 }/*# sourceMappingURL=main.css.map */
