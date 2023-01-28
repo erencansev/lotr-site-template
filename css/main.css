@@ -759,4 +759,9 @@ template {
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-blend-mode: screen;
+}
+
+footer {
+  background-color: #333;
+  padding: 10rem 0;
 }/*# sourceMappingURL=main.css.map */
