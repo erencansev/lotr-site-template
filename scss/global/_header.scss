@@ -1,73 +1,80 @@
-.header {
+// .header {
+//   height: 95vh;
+//   background-image: url("/images/the_one_ring_lotr.jpg"),
+//     linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   background-size: contain;
+//   background-position: right top;
+//   position: relative;
+//   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+//   display: block;
+//   .header-text-box {
+//     position: absolute;
+//     top: 40%;
+//     left: 26%;
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+//     width: 80%;
+
+//     h1 {
+//       font-size: 2em;
+//       margin: 0.67em 0;
+//       margin-bottom: 35px;
+
+//       .header-primary-main {
+//         font-family: Lora, serif;
+//         color: goldenrod;
+//         display: block;
+//         font-size: 2.5rem;
+//         font-weight: 700px;
+//         letter-spacing: 1px;
+//         @media screen and (max-width: 992px) {
+//           font-size: 2rem;
+//           color: red;
+//         }
+//         @media screen and (max-width: 768px) {
+//           font-size: 1.5rem;
+//           color: red;
+//         }
+
+//         @media screen and (max-width: 576px) {
+//           font-size: 1rem;
+//           color: red;
+//         }
+//       }
+//       .header-primary-sub {
+//         color: #f7f7f7;
+//         display: block;
+//         font-size: 24px;
+//         font-weight: 400;
+//         letter-spacing: 1px;
+//       }
+//     }
+//     .buy-now-button {
+//       text-decoration: none;
+//       color: black;
+//       background-color: goldenrod;
+//       border-radius: 1rem;
+//       width: 189px;
+//       height: 68px;
+//       margin-bottom: 55px;
+//       a {
+//         padding: 18px 48px;
+//         text-align: center;
+//         text-decoration: none;
+//         color: black;
+//         font-size: 19px;
+//         text-transform: uppercase;
+//         font-weight: bold;
+//       }
+//     }
+//   }
+// }
+header {
   height: 95vh;
-  background-image: url("/images/the_one_ring_lotr.jpg"),
-    linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
+  background-image: url(/images/the_one_ring_lotr.jpg);
+  background-size: cover;
   background-position: right top;
-  position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-  display: block;
-  .header-text-box {
-    position: absolute;
-    top: 40%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
-
-    h1 {
-      font-size: 2em;
-      margin: 0.67em 0;
-      margin-bottom: 35px;
-
-      .header-primary-main {
-        font-family: Lora, serif;
-        color: goldenrod;
-        display: block;
-        font-size: 2.5rem;
-        font-weight: 700px;
-        letter-spacing: 1px;
-        @media screen and (max-width: 992px) {
-          font-size: 2rem;
-          color: red;
-        }
-        @media screen and (max-width: 768px) {
-          font-size: 1.5rem;
-          color: red;
-        }
-
-        @media screen and (max-width: 576px) {
-          font-size: 1rem;
-          color: red;
-        }
-      }
-      .header-primary-sub {
-        color: #f7f7f7;
-        display: block;
-        font-size: 24px;
-        font-weight: 400;
-        letter-spacing: 1px;
-      }
-    }
-    .buy-now-button {
-      text-decoration: none;
-      color: black;
-      background-color: goldenrod;
-      border-radius: 1rem;
-      width: 189px;
-      height: 68px;
-      margin-bottom: 55px;
-      a {
-        padding: 18px 48px;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-        font-size: 19px;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-    }
-  }
 }
