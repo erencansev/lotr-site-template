@@ -385,14 +385,16 @@ template {
   display: none;
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
@@ -401,6 +403,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #999;
+  box-sizing: border-box;
 }
 
 header {
@@ -413,7 +416,7 @@ header {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
-header .header-text-box {
+header .header__text-box {
   position: absolute;
   top: 40%;
   left: 20%;
@@ -421,18 +424,18 @@ header .header-text-box {
   text-align: center;
   width: 80%;
 }
-header .header-text-box .header-primary {
+header .header__text-box .header-primary {
   display: block;
 }
-header .header-text-box .header-primary .header-primary-main {
-  color: goldenrod;
+header .header__text-box .header-primary--main {
+  color: #ae8319;
   display: block;
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1px;
   animation: moveInLeft 3s ease-out;
 }
-header .header-text-box .header-primary .header-primary-sub {
+header .header__text-box .header-primary--sub {
   color: #f7f7f7;
   display: block;
   font-size: 2rem;
@@ -440,8 +443,7 @@ header .header-text-box .header-primary .header-primary-sub {
   letter-spacing: 1px;
   animation: moveInRight 3s ease-out;
 }
-header .btn:link,
-header .btn:visited {
+header .btn:link, header .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -452,15 +454,22 @@ header .btn:visited {
 }
 header .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(228, 166, 10, 0.952);
+  box-shadow: 0 1rem 2rem #ae8319;
+}
+header .btn:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
 }
 header .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(221, 162, 13, 0.973);
+  box-shadow: 0 0.5rem 1rem #ae8319;
 }
-header .btn-gold {
+header .btn--gold {
   background-color: goldenrod;
   color: black;
+}
+header .btn--gold::after {
+  background-color: goldenrod;
 }
 header .btn::after {
   content: "";
@@ -473,13 +482,6 @@ header .btn::after {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-}
-header .btn-gold::after {
-  background-color: goldenrod;
-}
-header .btn:hover::after {
-  transform: scaleX(1.5) scaleY(1.6);
-  opacity: 0;
 }
 
 @keyframes moveInLeft {
