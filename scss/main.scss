@@ -1,12 +1,25 @@
-//variable
-@import "./config/variable";
-//formalize
-@import "./helper/formalize";
-//normalize
-@import "./helper/normalize";
-//global
-@import "./helper/global";
-//navbar
-@import "./global/navbar";
-@import "./global/header";
-@import "./global/section";
+// pages
+
+@import "./pages/home";
+// base
+
+@import "./base/utilities";
+@import "./base/typography";
+@import "./base/base";
+@import "./base/animation";
+// abstracts
+
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+@import "./abstracts/variable";
+// components
+
+@import "./components/formalize";
+@import "./components/normalize";
+@import "./components/button";
+// layout
+
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/section";
+@import "./layout/footer";

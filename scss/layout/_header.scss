@@ -1,0 +1,42 @@
+header {
+  height: 95vh;
+  background-image: url(/images/the_one_ring_lotr.jpg),
+    linear-gradient(to right, $primary-black, $primary-black);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+
+    .header-primary {
+      display: block;
+
+      &--main {
+        color: $section-dark-color;
+        display: block;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        animation: moveInLeft 3s ease-out;
+      }
+
+      &--sub {
+        color: $background-dark-color;
+        display: block;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        animation: moveInRight 3s ease-out;
+      }
+    }
+  }
+}
