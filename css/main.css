@@ -1,24 +1,3 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #999;
-  box-sizing: border-box;
-}
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -55,6 +34,96 @@ body {
     transform: translate(0);
   }
 }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #999;
+  box-sizing: border-box;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+.header__text-box .header-primary {
+  display: block;
+}
+.header__text-box .header-primary--main {
+  color: #ae8319;
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  animation: moveInLeft 3s ease-out;
+}
+.header__text-box .header-primary--sub {
+  color: #f7f7f7;
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  animation: moveInRight 3s ease-out;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 1rem;
+  position: relative;
+  animation: moveInBottom 1s ease-out;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem #ae8319;
+}
+.btn:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem #ae8319;
+}
+.btn--gold {
+  background-color: goldenrod;
+  color: black;
+}
+.btn--gold::after {
+  background-color: goldenrod;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -442,47 +511,6 @@ template {
   display: none;
 }
 
-.btn:link, .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 1rem;
-  position: relative;
-  animation: moveInBottom 1s ease-out;
-}
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem #ae8319;
-}
-.btn:hover::after {
-  transform: scaleX(1.5) scaleY(1.6);
-  opacity: 0;
-}
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem #ae8319;
-}
-.btn--gold {
-  background-color: goldenrod;
-  color: black;
-}
-.btn--gold::after {
-  background-color: goldenrod;
-}
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
 header {
   height: 95vh;
   background-image: url(/images/the_one_ring_lotr.jpg), linear-gradient(to right, black, black);
@@ -492,31 +520,4 @@ header {
   background-position: right top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-}
-header .header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 80%;
-}
-header .header__text-box .header-primary {
-  display: block;
-}
-header .header__text-box .header-primary--main {
-  color: #ae8319;
-  display: block;
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  animation: moveInLeft 3s ease-out;
-}
-header .header__text-box .header-primary--sub {
-  color: #f7f7f7;
-  display: block;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  animation: moveInRight 3s ease-out;
 }/*# sourceMappingURL=main.css.map */
