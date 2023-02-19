@@ -56,15 +56,21 @@ body {
 }
 
 .header__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 40%;
-  left: 20%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%;
 }
 .header__text-box .header-primary {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.header__text-box .header-primary__sub-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 .header__text-box .header-primary--main {
   color: #ae8319;
@@ -86,11 +92,14 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   display: inline-block;
   border-radius: 1rem;
   position: relative;
   animation: moveInBottom 1s ease-out;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 1rem;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -512,7 +521,11 @@ template {
 }
 
 header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 95vh;
+  padding: 0 10%;
   background-image: url(/images/the_one_ring_lotr.jpg), linear-gradient(to right, black, black);
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -1,5 +1,9 @@
 header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 95vh;
+  padding: 0 10%;
   background-image: url(/images/the_one_ring_lotr.jpg),
     linear-gradient(to right, $primary-black, $primary-black);
   background-repeat: no-repeat;

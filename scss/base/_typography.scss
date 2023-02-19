@@ -1,13 +1,20 @@
 .header__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 40%;
-  left: 20%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%;
 
   .header-primary {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    &__sub-box {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
 
     &--main {
       color: $section-dark-color;
