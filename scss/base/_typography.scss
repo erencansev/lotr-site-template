@@ -17,7 +17,7 @@
     }
 
     &--main {
-      color: $section-dark-color;
+      color: $primary-color;
       display: block;
       font-size: 3rem;
       font-weight: 600;
@@ -33,5 +33,27 @@
       letter-spacing: 1px;
       animation: moveInRight 3s ease-out;
     }
+  }
+}
+
+.header-secondary {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    to right,
+    $section-light-color,
+    $section-dark-color
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveInLeft 3s ease-out;
+
+  &:hover {
+    transform: translateY(2px);
+    text-shadow: 0.5rem 1rem 2rem $section-light-color;
   }
 }

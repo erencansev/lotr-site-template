@@ -1,0 +1,33 @@
+.row-div {
+  width: auto;
+  height: auto;
+  margin-top: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 40rem;
+    width: 50%;
+    height: auto;
+    padding: 0 30px 40px 0;
+    margin-right: 15rem;
+    .paragraph {
+      font-size: 2rem;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    margin-right: 3rem;
+    img {
+      width: 90%;
+      height: 80%;
+    }
+  }
+}
