@@ -114,6 +114,14 @@ body {
   margin-bottom: 8rem;
 }
 
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.offers-header {
+  margin-top: 5rem;
+}
+
 .row-div {
   width: auto;
   height: auto;
@@ -124,13 +132,14 @@ body {
 }
 .row-div .left {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  min-width: 40rem;
+  flex-direction: column;
   width: 50%;
   height: auto;
   padding: 0 30px 40px 0;
   margin-right: 15rem;
+  gap: 4rem;
 }
 .row-div .left .paragraph {
   font-size: 2rem;
@@ -143,8 +152,20 @@ body {
   margin-right: 3rem;
 }
 .row-div .right img {
-  width: 90%;
-  height: 80%;
+  width: 70%;
+  height: 60%;
+  transition: all 0.2s;
+}
+.row-div .right img:hover {
+  outline: 1.5rem solid goldenrod;
+  transform: scale(1.1);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+.row-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .btn:link, .btn:visited {
@@ -191,6 +212,47 @@ body {
   transition: all 0.4s;
 }
 
+.btn-text:link, .btn-text:visited {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  color: goldenrod;
+  font-size: 2rem;
+  border-bottom: 1px solid goldenrod;
+  transition: all 0.2s;
+}
+.btn-text:hover {
+  background-color: goldenrod;
+  color: white;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0px);
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.feature-box__icon {
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 6rem;
+  background-image: linear-gradient(to right, #e8c15f, #ae8319);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -597,4 +659,26 @@ header {
   background-color: #f7f7f7;
   padding: 25rem 10%;
   margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, rgba(232, 193, 95, 0.8), rgba(174, 131, 25, 0.8)), url(/images/mountDoom.jpg);
+  background-size: cover;
+  transform: skewY(7deg);
+  margin-top: -11.5rem;
+}
+.section-features > * {
+  transform: skewY(-7deg);
+}
+.section-features--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-offers {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
 }/*# sourceMappingURL=main.css.map */

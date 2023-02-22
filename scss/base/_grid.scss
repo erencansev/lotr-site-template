@@ -7,13 +7,16 @@
   justify-content: space-between;
   .left {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    min-width: 40rem;
+    flex-direction: column;
+    // min-width: 40rem; try again and search agam!
     width: 50%;
     height: auto;
     padding: 0 30px 40px 0;
     margin-right: 15rem;
+    gap: 4rem;
+
     .paragraph {
       font-size: 2rem;
     }
@@ -26,8 +29,20 @@
 
     margin-right: 3rem;
     img {
-      width: 90%;
-      height: 80%;
+      width: 70%;
+      height: 60%;
+      transition: all 0.2s;
+
+      &:hover {
+        outline: 1.5rem solid $primary-color;
+        transform: scale(1.1);
+        box-shadow: 0 2.5rem 4rem rgba($color: $primary-black, $alpha: 0.4);
+      }
     }
   }
+}
+.row-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

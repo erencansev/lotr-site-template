@@ -3,3 +3,29 @@
   padding: 25rem 10%;
   margin-top: -20vh;
 }
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(232, 193, 95, 0.8),
+      rgba(174, 131, 25, 0.8)
+    ),
+    url(/images/mountDoom.jpg);
+  background-size: cover;
+  transform: skewY(7deg);
+  margin-top: -11.5rem;
+  & > * {
+    transform: skewY(-7deg);
+  }
+  &--row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.section-offers {
+  background-color: $background-dark-color;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+}
