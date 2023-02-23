@@ -1,7 +1,8 @@
 .row-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 0 13rem;
 
   .card {
     perspective: 150rem;
@@ -10,22 +11,7 @@
     width: 40rem;
 
     .card__side {
-      // display: flex;
-      // align-items: center;
-      // justify-content: start;
-      // flex-direction: column;
-      // color: white;
-      // font-size: 2rem;
-      // height: 50rem;
-      // transition: all 0.8s ease;
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // width: 100%;
-      // backface-visibility: hidden;
-      // border-radius: 3px;
-      // box-shadow: 0 1.5rem 4rem rgba($color: $primary-black, $alpha: 0.15);
-      height: 50rem;
+      height: 60rem;
       border-radius: 3px;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgb(18 18 18 / 15%);
@@ -51,6 +37,14 @@
             background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
               url(/images/Samwise.jpg);
           }
+          &--2 {
+            background-image: linear-gradient(to right bottom, #e8c15f, #ae8319),
+              url(/images/frodo.jpg);
+          }
+          &--3 {
+            background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+              url(/images/baggins.jpg);
+          }
         }
         &:hover &__side--front {
           transform: rotateY(180deg);
@@ -69,6 +63,12 @@
             $color-secondary-light,
             $color-secondary-dark
           );
+        }
+        &-2 {
+          background-image: linear-gradient(to right bottom, #e8c15f, #ae8319);
+        }
+        &-3 {
+          background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
         }
       }
     }

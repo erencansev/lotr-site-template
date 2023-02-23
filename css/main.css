@@ -255,8 +255,9 @@ body {
 }
 .row-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 0 13rem;
 }
 .row-card .card {
   perspective: 150rem;
@@ -265,7 +266,7 @@ body {
   width: 40rem;
 }
 .row-card .card .card__side {
-  height: 50rem;
+  height: 60rem;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.15);
@@ -290,6 +291,12 @@ body {
 .row-card .card .card__side--front .card__picture--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/images/Samwise.jpg);
 }
+.row-card .card .card__side--front .card__picture--2 {
+  background-image: linear-gradient(to right bottom, #e8c15f, #ae8319), url(/images/frodo.jpg);
+}
+.row-card .card .card__side--front .card__picture--3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/images/baggins.jpg);
+}
 .row-card .card .card__side--front:hover .row-card .card .card__side--front__side--front {
   transform: rotateY(180deg);
 }
@@ -301,6 +308,12 @@ body {
 }
 .row-card .card .card__side--back-1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.row-card .card .card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #e8c15f, #ae8319);
+}
+.row-card .card .card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 .row-card .card:hover .card__side--front {
   transform: rotateY(-180deg);
