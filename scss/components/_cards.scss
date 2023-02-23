@@ -1,0 +1,83 @@
+.row-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 30rem;
+    width: 40rem;
+
+    .card__side {
+      // display: flex;
+      // align-items: center;
+      // justify-content: start;
+      // flex-direction: column;
+      // color: white;
+      // font-size: 2rem;
+      // height: 50rem;
+      // transition: all 0.8s ease;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // width: 100%;
+      // backface-visibility: hidden;
+      // border-radius: 3px;
+      // box-shadow: 0 1.5rem 4rem rgba($color: $primary-black, $alpha: 0.15);
+      height: 50rem;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgb(18 18 18 / 15%);
+      transition: all 0.6s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 1.5rem 4rem rgba($color: $primary-black, $alpha: 0.15);
+      backface-visibility: hidden;
+      // bu yukardaki özellik çok ii bişiymiş amk
+
+      &--front {
+        background-color: $background-light-color;
+
+        .card__picture {
+          background-size: cover;
+          height: 30rem;
+          background-blend-mode: screen;
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          &--1 {
+            background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+              url(/images/Samwise.jpg);
+          }
+        }
+        &:hover &__side--front {
+          transform: rotateY(180deg);
+        }
+        &:hover &__side--back {
+          transform: rotateY(0);
+        }
+      }
+
+      &--back {
+        transform: rotateY(180deg);
+
+        &-1 {
+          background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          );
+        }
+      }
+    }
+
+    &:hover .card__side--front {
+      transform: rotateY(-180deg);
+    }
+    &:hover .card__side--back {
+      transform: rotateY(0);
+    }
+  }
+}

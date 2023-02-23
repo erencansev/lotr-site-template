@@ -253,6 +253,62 @@ body {
 .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
 }
+.row-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.row-card .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 30rem;
+  width: 40rem;
+}
+.row-card .card .card__side {
+  height: 50rem;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.15);
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
+}
+.row-card .card .card__side--front {
+  background-color: white;
+}
+.row-card .card .card__side--front .card__picture {
+  background-size: cover;
+  height: 30rem;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.row-card .card .card__side--front .card__picture--1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/images/Samwise.jpg);
+}
+.row-card .card .card__side--front:hover .row-card .card .card__side--front__side--front {
+  transform: rotateY(180deg);
+}
+.row-card .card .card__side--front:hover .row-card .card .card__side--front__side--back {
+  transform: rotateY(0);
+}
+.row-card .card .card__side--back {
+  transform: rotateY(180deg);
+}
+.row-card .card .card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.row-card .card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.row-card .card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -679,6 +735,6 @@ header {
 
 .section-offers {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
-  margin-top: -10rem;
+  padding: 20rem 0 50rem 0;
+  margin-top: -12rem;
 }/*# sourceMappingURL=main.css.map */
