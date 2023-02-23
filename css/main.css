@@ -267,6 +267,7 @@ body {
 }
 .row-card .card .card__side {
   height: 60rem;
+  overflow: hidden;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.15);
@@ -302,6 +303,17 @@ body {
 }
 .row-card .card .card__side--front:hover .row-card .card .card__side--front__side--back {
   transform: rotateY(0);
+}
+.row-card .card .card__side--front .card__heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.row-card .card .card__side--front .card__details {
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 .row-card .card .card__side--back {
   transform: rotateY(180deg);

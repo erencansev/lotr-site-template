@@ -12,6 +12,7 @@
 
     .card__side {
       height: 60rem;
+      overflow: hidden;
       border-radius: 3px;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgb(18 18 18 / 15%);
@@ -51,6 +52,17 @@
         }
         &:hover &__side--back {
           transform: rotateY(0);
+        }
+        .card__heading {
+          font-size: 3rem;
+          text-align: center;
+          font-weight: 700;
+          padding: 1rem 0;
+        }
+        .card__details {
+          font-size: 1.75rem;
+          text-align: center;
+          padding: 2rem 1rem;
         }
       }
 
