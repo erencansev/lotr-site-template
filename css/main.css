@@ -262,7 +262,7 @@ body {
 .row-card .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 30rem;
+  height: 60rem;
   width: 40rem;
 }
 .row-card .card .card__side {
