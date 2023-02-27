@@ -90,5 +90,28 @@
     &:hover .card__side--back {
       transform: rotateY(0);
     }
+
+    // back styling
+
+    &__cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__price-box {
+      text-align: center;
+      color: $background-light-color;
+      margin-bottom: 8rem;
+    }
+    &__price-only {
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    &__price-value {
+      font-size: 6rem;
+      font-weight: 100;
+    }
   }
 }

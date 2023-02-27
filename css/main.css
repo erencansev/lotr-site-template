@@ -122,6 +122,14 @@ body {
   margin-top: 5rem;
 }
 
+.btn-white {
+  background-color: white;
+  color: gray;
+}
+.btn-white::after {
+  background-color: white;
+}
+
 .row-div {
   width: auto;
   height: auto;
@@ -198,6 +206,11 @@ body {
 }
 .btn--gold::after {
   background-color: goldenrod;
+}
+.btn--gold .btn--white {
+  background-color: #fff;
+  color: #121212;
+  font-weight: 700;
 }
 .btn::after {
   content: "";
@@ -332,6 +345,26 @@ body {
 }
 .row-card .card:hover .card__side--back {
   transform: rotateY(0);
+}
+.row-card .card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.row-card .card__price-box {
+  text-align: center;
+  color: white;
+  margin-bottom: 8rem;
+}
+.row-card .card__price-only {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.row-card .card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 
 *, *:before, *:after {

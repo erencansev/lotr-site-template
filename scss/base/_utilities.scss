@@ -10,3 +10,10 @@
 .offers-header {
   margin-top: 5rem;
 }
+.btn-white {
+  background-color: white;
+  color: gray;
+  &::after {
+    background-color: white;
+  }
+}

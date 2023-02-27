@@ -31,6 +31,11 @@
     &::after {
       background-color: $primary-color;
     }
+    .btn--white {
+      background-color: #fff;
+      color: #121212;
+      font-weight: 700;
+    }
   }
   &::after {
     content: "";
