@@ -1,0 +1,43 @@
+.row {
+  .story {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 25rem;
+    // height: 25rem;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color: #000000, $alpha: 0.1);
+    background-color: $background-light-color;
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+
+    transform: skew(-12deg);
+
+    &__shape {
+      max-width: 15rem;
+      max-height: 15rem;
+      background-color: red;
+      // float: left;
+      // browser support for-safari
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      // browser support for-safari
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      transform: translateX(-3rem) skew(12deg);
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text {
+      transform: skew(12deg);
+    }
+  }
+}
