@@ -1,43 +1,53 @@
-.row {
+.row-stories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   .story {
+    width: 60%;
+    height: 30rem;
+    margin: 5rem auto;
+    transform: skewX(-12deg);
+    box-shadow: 0 3rem 6rem rgb(18 18 18 / 10%);
+
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    .story-image-div {
+      width: 17rem;
+      height: 17rem;
+      border-radius: 50%;
+      transform: skewX(+12deg);
+      margin-left: 2rem;
 
-    max-width: 50%;
-    min-width: 50%;
-    min-height: 25rem;
-    // height: 25rem;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($color: #000000, $alpha: 0.1);
-    background-color: $background-light-color;
-    border-radius: 3px;
-    padding: 6rem;
-    padding-left: 9rem;
-    font-size: $default-font-size;
+      img {
+        padding: 0;
+        max-width: 100%;
+        min-width: 100%;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .figcaption {
+        position: absolute;
+        text-align: center;
 
-    transform: skew(-12deg);
-
-    &__shape {
-      max-width: 15rem;
-      max-height: 15rem;
-      background-color: red;
-      // float: left;
-      // browser support for-safari
-      -webkit-shape-outside: circle(50% at 50% 50%);
-      shape-outside: circle(50% at 50% 50%);
-      // browser support for-safari
-      -webkit-clip-path: circle(50% at 50% 50%);
-      clip-path: circle(50% at 50% 50%);
-      transform: translateX(-3rem) skew(12deg);
+        .story-header h3 {
+          font-size: 2rem;
+          margin-right: 15rem;
+          p {
+            font-size: 1rem;
+            padding-right: 5rem;
+          }
+        }
+      }
     }
-    &__img {
-      width: 100%;
-      height: 100%;
-    }
+  }
 
-    &__text {
-      transform: skew(12deg);
-    }
+  // image hover blur effect
+
+  .story:hover img {
+    webkit-filter: blur(4px);
+    filter: blur(1.5px);
   }
 }
