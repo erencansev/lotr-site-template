@@ -75,3 +75,28 @@
     transform: translateY(0px);
   }
 }
+// .btn-discover-text {
+//   &:link,
+//   &:visited {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: $primary-color;
+//     font-size: 2rem;
+//     border-bottom: 1px solid $primary-color;
+//     transition: all 0.2s;
+//     width: 30%;
+//   }
+
+//   &:hover {
+//     background-color: $primary-color;
+//     color: $background-light-color;
+//     box-shadow: 0 2rem 2rem rgba($color: $primary-black, $alpha: 0.2);
+//     transform: translateY(-2px);
+//   }
+
+//   &:active {
+//     box-shadow: 0 0.5rem 1rem rgba($color: $primary-black, $alpha: 0.15);
+//     transform: translateY(0px);
+//   }
+// }

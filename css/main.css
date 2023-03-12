@@ -771,6 +771,10 @@ template {
   justify-content: space-evenly;
 }
 .row-stories .story .story-image-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 17rem;
   height: 17rem;
   border-radius: 50%;
@@ -782,23 +786,45 @@ template {
   max-width: 100%;
   min-width: 100%;
   border-radius: 50%;
-  position: absolute;
+  transform: scale(1);
+  transition: all ease 0.5s;
+  backface-visibility: hidden;
 }
-.row-stories .story .story-image-div .figcaption {
-  position: absolute;
-  text-align: center;
-}
-.row-stories .story .story-image-div .figcaption .story-header h3 {
+.row-stories .story .story-image-div .story-header h3 {
   font-size: 2rem;
   margin-right: 15rem;
 }
-.row-stories .story .story-image-div .figcaption .story-header h3 p {
+.row-stories .story .story-image-div .story-header h3 p {
   font-size: 1rem;
   padding-right: 5rem;
 }
+.row-stories .story .story-image-div .story__caption {
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  transform: translate(0, 150%);
+  opacity: 0;
+  transition: all ease 0.5s;
+  color: white;
+  font: 300;
+  text-transform: uppercase;
+}
 .row-stories .story:hover img {
   webkit-filter: blur(4px);
-  filter: blur(1.5px);
+  filter: blur(2px) brightness(90%);
+  transform: scale(1.1);
+}
+.row-stories .story:hover .story__caption {
+  opacity: 1;
+  transform: translateY(-10%);
+}
+
+.btn-discover-div {
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
