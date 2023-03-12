@@ -761,11 +761,12 @@ template {
   flex-direction: column;
 }
 .row-stories .story {
+  background-color: rgba(255, 255, 255, 0.5);
   width: 60%;
   height: 30rem;
   margin: 5rem auto;
   transform: skewX(-12deg);
-  box-shadow: 0 3rem 6rem rgba(18, 18, 18, 0.1);
+  box-shadow: 0 3rem 6rem rgba(18, 18, 18, 0.705);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -827,6 +828,22 @@ template {
   justify-content: center;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  overflow: hidden;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 header {
   display: flex;
   justify-content: flex-start;
@@ -871,6 +888,6 @@ header {
 }
 
 .section-stories {
+  position: relative;
   padding: 15rem 0;
-  background-color: white;
 }/*# sourceMappingURL=main.css.map */

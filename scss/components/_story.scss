@@ -5,11 +5,12 @@
   flex-direction: column;
 
   .story {
+    background-color: rgba($color: white, $alpha: 0.5);
     width: 60%;
     height: 30rem;
     margin: 5rem auto;
     transform: skewX(-12deg);
-    box-shadow: 0 3rem 6rem rgb(18 18 18 / 10%);
+    box-shadow: 0 3rem 6rem rgba(18, 18, 18, 0.705);
 
     display: flex;
     align-items: center;
