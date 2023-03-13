@@ -2,12 +2,6 @@
 @import "./scss/abstracts/mixins";
 @import "./scss/abstracts/variables";
 
-@import "./scss/base/animation";
-@import "./scss/base/base";
-@import "./scss/base/typography";
-@import "./scss/base/utilities";
-@import "./scss/base/grid";
-
 @import "./scss/components/button";
 @import "./scss/components/feature-box";
 @import "./scss/components/cards";
@@ -15,10 +9,17 @@
 @import "./scss/components/normalize";
 @import "./scss/components/story";
 @import "./scss/components/bg-video";
+@import "./scss/components/form";
 
 @import "./scss/layout/footer";
 @import "./scss/layout/header";
 @import "./scss/layout/navbar";
 @import "./scss/layout/section";
+
+@import "./scss/base/animation";
+@import "./scss/base/base";
+@import "./scss/base/typography";
+@import "./scss/base/utilities";
+@import "./scss/base/grid";
 
 @import "./scss/pages/home";
