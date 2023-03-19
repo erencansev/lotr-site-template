@@ -1,0 +1,58 @@
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    background-color: $background-light-color;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 2000;
+    border-radius: 50%;
+  }
+  &__background {
+    position: fixed;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(
+      $section-light-color,
+      $section-dark-color
+    );
+    z-index: 1000;
+
+    transform: scale(80);
+  }
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+  }
+  &__list {
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    list-style: none;
+    text-align: center;
+  }
+  &_item {
+  }
+
+  &__link {
+    font-size: 3rem;
+    font-weight: 300;
+    color: $background-light-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, orangered 50%, white 50%);
+    background-size: 100%;
+  }
+}

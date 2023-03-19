@@ -187,6 +187,7 @@
 .row-card .card__price-value {
   font-size: 6rem;
   font-weight: 100;
+  align-items: center;
 }
 
 *, *:before, *:after {
@@ -663,7 +664,7 @@ template {
 .bg-video__content {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .form__group:not(:last-child) {
@@ -769,6 +770,56 @@ header {
   background-position: right top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.navigation__checkbox {
+  display: none;
+}
+.navigation__button {
+  background-color: white;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  border-radius: 50%;
+}
+.navigation__background {
+  position: fixed;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#e8c15f, #ae8319);
+  z-index: 1000;
+  transform: scale(80);
+}
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+}
+.navigation__list {
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  list-style: none;
+  text-align: center;
+}
+.navigation__link {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, orangered 50%, white 50%);
+  background-size: 100%;
 }
 
 @keyframes moveInLeft {
