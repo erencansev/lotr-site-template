@@ -6,4 +6,6 @@ My project is a web design inspired by The Lord of the Rings. The goal was to im
 
 ---
 
-live -> https://lotr-site-template.netlify.app/
+## **<p> Lord Of The Rings site template screenshots </p>**
+
+![lotr markdown image](./images/lotr-site-screenshots.png)
